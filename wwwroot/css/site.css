@@ -1,0 +1,11 @@
+body {
+    background-color: #f8f9fa; /* Un gris muy claro que hace resaltar las tarjetas */
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+    .card:hover {
+        transform: translateY(-5px); /* Efecto de flotar al pasar el ratón */
+    }

@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="p-5 mb-4 bg-light rounded-3 border-start border-5 border-primary shadow-sm">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold text-primary"><i class="bi bi-plus-lg"></i> Farmacia Tu Salud</h1>
+        <p class="col-md-8 fs-4 text-secondary">Bienvenido al sistema de gestión. Aquí puedes administrar el inventario de medicamentos de forma rápida y segura.</p>
+        <a asp-page="/Medicamentos/Index" class="btn btn-primary btn-lg rounded-pill px-4">Ir al Inventario</a>
+    </div>
+</div>
+
+<div class="row text-center mt-5">
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+            <i class="bi bi-shield-check text-success display-4"></i>
+            <h3 class="mt-2">Calidad</h3>
+            <p>Medicamentos certificados y con fechas vigentes.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+            <i class="bi bi-truck text-info display-4"></i>
+            <h3 class="mt-2">Entregas</h3>
+            <p>Distribución eficiente a todas nuestras sucursales.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+            <i class="bi bi-people text-warning display-4"></i>
+            <h3 class="mt-2">Atención</h3>
+            <p>Soporte técnico y farmacéutico las 24 horas.</p>
+        </div>
+    </div>
+</div>

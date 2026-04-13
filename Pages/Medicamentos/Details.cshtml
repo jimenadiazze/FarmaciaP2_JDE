@@ -1,0 +1,55 @@
+﻿@page
+@model Farmacia.Pages.Medicamentos.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Medicamento</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamento.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicamento.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamento.Laboratorio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicamento.Laboratorio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamento.Precio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicamento.Precio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamento.Stock)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicamento.Stock)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamento.Categoria)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicamento.Categoria)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamento.FechaCaducidad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicamento.FechaCaducidad)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Medicamento.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
